@@ -1,0 +1,16 @@
+{
+  "name": "ef-moon",
+  "version": "2.0.0",
+  "description": "EF MOON — The Moonite Era",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "setup-kv": "echo 'Create a KV store in your Vercel dashboard: https://vercel.com/docs/storage/vercel-kv'"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

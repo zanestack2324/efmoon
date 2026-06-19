@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EF MOON — Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <img src="../LOGO%202.png" alt="EF Moon" height="50">
+        <h1>Admin Panel</h1>
+        <p>Sign in to manage your content</p>
+      </div>
+      <form id="loginForm" autocomplete="off">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="admin" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block">Sign In</button>
+        <p id="loginError" class="error-msg"></p>
+      </form>
+    </div>
+  </div>
+  <script>
+  document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    const err = document.getElementById('loginError');
+    btn.disabled = true;
+    btn.textContent = 'Signing in...';
+    err.textContent = '';
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: document.getElementById('username').value, password: document.getElementById('password').value })
+      });
+      const data = await res.json();
+      if (res.ok) {
+        localStorage.setItem('efm_token', data.token);
+        localStorage.setItem('efm_user', JSON.stringify(data.user));
+        window.location.href = 'dashboard.html';
+      } else {
+        err.textContent = data.error || 'Login failed';
+      }
+    } catch {
+      err.textContent = 'Network error. Is the server running?';
+    }
+    btn.disabled = false;
+    btn.textContent = 'Sign In';
+  });
+  // Redirect if already logged in
+  (async () => {
+    const token = localStorage.getItem('efm_token');
+    if (token) {
+      try {
+        const res = await fetch('/api/auth/verify', { headers: { 'Authorization': `Bearer ${token}` } });
+        if (res.ok) window.location.href = 'dashboard.html';
+      } catch {}
+    }
+  })();
+  </script>
+</body>
+</html>

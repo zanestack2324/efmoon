@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>EF MOON — The Moonite Era</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.youtube.com">
+  <link rel="dns-prefetch" href="https://open.spotify.com">
+  <link rel="preload" as="image" href="HERO%20PAGE.png" fetchpriority="high">
+  <link rel="preload" as="image" href="EF%20MOON.png" fetchpriority="high">
+  <link rel="preload" as="image" href="LOGO%202.png" fetchpriority="high">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" media="print" onload="this.media='all'" fetchpriority="high">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap"></noscript>
+  <link rel="icon" type="image/png" href="LOGO%202.png">
+  <svg style="position:fixed;width:0;height:0;pointer-events:none;">
+    <filter id="torn">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="burnt">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.05  0 0 0 0 0.03  0 0 0 0 0.01  0 0 0 0.3 0"/>
+    </filter>
+  </svg>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; border-radius: 0 !important; }
+    [hidden] { display: none !important; }
+    @media (hover: hover) and (pointer: fine) {
+      * { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Ccircle cx='18' cy='18' r='16' fill='%23FFD700'/%3E%3Ccircle cx='13' cy='14' r='3' fill='%23000'/%3E%3Ccircle cx='23' cy='14' r='3' fill='%23000'/%3E%3Cellipse cx='18' cy='20' rx='6' ry='4' fill='%23000'/%3E%3C/svg%3E") 18 18, auto; }
+    }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-font-smoothing: antialiased;
+      overscroll-behavior: none;
+    }
+    .torn-edge {
+      filter: url(#torn);
+    }
+    .torn-bottom {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 99.5% 97.5%, 98% 99%, 96% 97.5%, 94% 99%, 92% 97.5%, 90% 99%, 88% 97.5%, 86% 99%, 84% 97.5%, 82% 99%, 80% 97.5%, 78% 99%, 76% 97.5%, 74% 99%, 72% 97.5%, 70% 99%, 68% 97.5%, 66% 99%, 64% 97.5%, 62% 99%, 60% 97.5%, 58% 99%, 56% 97.5%, 54% 99%, 52% 97.5%, 50% 99%, 48% 97.5%, 46% 99%, 44% 97.5%, 42% 99%, 40% 97.5%, 38% 99%, 36% 97.5%, 34% 99%, 32% 97.5%, 30% 99%, 28% 97.5%, 26% 99%, 24% 97.5%, 22% 99%, 20% 97.5%, 18% 99%, 16% 97.5%, 14% 99%, 12% 97.5%, 10% 99%, 8% 97.5%, 6% 99%, 4% 97.5%, 2% 99%, 0.5% 97.5%, 0% 97%);
+    }
+    .torn-top {
+      clip-path: polygon(0% 3%, 0.5% 2.5%, 2% 1%, 4% 2.5%, 6% 1%, 8% 2.5%, 10% 1%, 12% 2.5%, 14% 1%, 16% 2.5%, 18% 1%, 20% 2.5%, 22% 1%, 24% 2.5%, 26% 1%, 28% 2.5%, 30% 1%, 32% 2.5%, 34% 1%, 36% 2.5%, 38% 1%, 40% 2.5%, 42% 1%, 44% 2.5%, 46% 1%, 48% 2.5%, 50% 1%, 52% 2.5%, 54% 1%, 56% 2.5%, 58% 1%, 60% 2.5%, 62% 1%, 64% 2.5%, 66% 1%, 68% 2.5%, 70% 1%, 72% 2.5%, 74% 1%, 76% 2.5%, 78% 1%, 80% 2.5%, 82% 1%, 84% 2.5%, 86% 1%, 88% 2.5%, 90% 1%, 92% 2.5%, 94% 1%, 96% 2.5%, 98% 1%, 99.5% 2.5%, 100% 3%, 100% 100%, 0% 100%);
+    }
+    .burnt-edge::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 8px;
+      background: linear-gradient(to top, rgba(40,20,5,0.25), transparent);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 48px;
+      background: transparent;
+      transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .navbar.scrolled {
+      background: rgba(0,0,0,0.95);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      padding: 10px 48px;
+    }
+    .nav-links { display: flex; gap: 48px; list-style: none; align-items: center; transition: opacity 0.35s ease, visibility 0.35s ease; }
+    .nav-links.hidden-scroll { opacity: 0; visibility: hidden; pointer-events: none; }
+    .nav-links a {
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 1.8rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      padding: 10px 0;
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+    .nav-links a:hover {
+      transform: scale(1.12);
+      animation: vibrate 0.3s ease;
+    }
+    @keyframes vibrate {
+      0%, 100% { transform: scale(1.12) translateX(0); }
+      25% { transform: scale(1.12) translateX(-2px); }
+      75% { transform: scale(1.12) translateX(2px); }
+    }
+
+    .nav-logo {
+      position: absolute;
+      left: 50%; transform: translateX(-50%);
+      transition: all 0.4s ease;
+      z-index: 1;
+    }
+    .nav-logo img { height: 60px; width: auto; filter: drop-shadow(0 0 20px rgba(255,215,0,0.2)); transition: height 0.4s ease; display: block; }
+    .navbar.scrolled .nav-logo img { height: 50px; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 5px; z-index: 10000; touch-action: manipulation; }
+    .hamburger span { width: 26px; height: 2px; background: #FFD700; transition: all 0.3s; border-radius: 1px; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+    .navbar-left-mobile { display: none; }
+    .navbar-right-tickets { display: inline-flex; }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      z-index: 0;
+      background: #0a0a0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      max-width: 900px;
+      padding: 20px;
+      padding: calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));
+      pointer-events: auto;
+    }
+    .hero-content h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(3rem, 10vw, 7rem);
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      line-height: 1;
+      color: #fff;
+      filter: url(#torn);
+      margin-bottom: 10px;
+    }
+    .hero-content h1 .highlight { color: #FFD700; }
+    .hero-content .hero-tagline {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1rem, 3vw, 1.8rem);
+      letter-spacing: 6px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 30px;
+      filter: url(#torn);
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .hero-buttons .btn-hero {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 14px 32px;
+      color: #0a0a0a;
+      background: #FFD700;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      touch-action: manipulation;
+      filter: url(#torn);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-buttons .btn-hero:hover { background: #fff; }
+    .hero-buttons .btn-hero:active { transform: scale(0.95); }
+    .hero-buttons .btn-hero-outline {
+      background: transparent;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+      filter: url(#torn);
+    }
+    .hero-buttons .btn-hero-outline:hover { background: #FFD700; color: #0a0a0a; }    .hero-video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      will-change: transform;
+    }
+    .hero-video-mobile-fallback {
+      display: none;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+    @media (max-width: 768px) {
+      .hero-video { display: none; }
+      .hero-video-mobile-fallback { display: block; }
+      .splashscreen-video { display: none; }
+      .splashscreen { background: #0a0a0a url('HERO%20PAGE.png') center/cover no-repeat; }
+      .splashscreen-btn { padding: 14px 32px; }
+    }
+    @media (max-width: 480px) {
+      .splashscreen-btn { padding: 12px 24px; width: 100%; max-width: 220px; }
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.1) 40%, rgba(10,10,10,0.8) 100%);
+      z-index: 2;
+    }
+    .hero-aurora {
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle at 30% 40%, rgba(255,215,0,0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 60%, rgba(255,0,51,0.04) 0%, transparent 50%);
+      z-index: 1;
+      animation: aurora 20s ease-in-out infinite alternate;
+    }
+    @keyframes aurora {
+      0% { transform: translate(0,0) rotate(0deg); }
+      100% { transform: translate(-40px,-30px) rotate(6deg); }
+    }
+
+    .hero-social-corner {
+      position: fixed;
+      bottom: 30px;
+      right: 24px;
+      z-index: 99999;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: nowrap;
+    }
+    @media (max-width: 768px) {
+      .hero-social-corner {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 12px;
+        gap: 4px;
+        max-width: 92vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 4px 8px;
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 50px;
+        border: 1px solid rgba(255,215,0,0.08);
+      }
+      .hero-social-corner::-webkit-scrollbar { display: none; }
+    }
+    .hero-social-corner a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFD700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+      background: rgba(0,0,0,0.65);
+      border: 1px solid rgba(255,215,0,0.3);
+      border-radius: 50%;
+      opacity: 1;
+    }
+    .hero-social-corner a svg { width: 16px; height: 16px; fill: currentColor; stroke: currentColor; }
+    .hero-social-corner a:hover {
+      color: #FFD700;
+      background: rgba(255,215,0,0.15);
+      border-color: #FFD700;
+      transform: scale(1.12);
+    }
+    .hero-social-corner a[data-platform="instagram"]:hover { color: #E4405F; border-color: #E4405F; background: rgba(228,64,95,0.15); }
+    .hero-social-corner a[data-platform="youtube"]:hover { color: #FF0000; border-color: #FF0000; background: rgba(255,0,0,0.15); }
+    .hero-social-corner a[data-platform="facebook"]:hover { color: #1877F2; border-color: #1877F2; background: rgba(24,119,242,0.15); }
+    .hero-social-corner a[data-platform="x"]:hover { color: #fff; border-color: #fff; background: rgba(255,255,255,0.1); }
+    .hero-social-corner a[data-platform="tiktok"]:hover { color: #00F2EA; border-color: #00F2EA; background: rgba(0,242,234,0.15); }
+    .hero-social-corner a[data-platform="spotify"]:hover { color: #1DB954; border-color: #1DB954; background: rgba(29,185,84,0.15); }
+    .hero-social-corner a[data-platform="applemusic"]:hover { color: #FA243C; border-color: #FA243C; background: rgba(250,36,60,0.15); }
+    .hero-social-corner a[data-platform="audiomack"]:hover { color: #FFA200; border-color: #FFA200; background: rgba(255,162,0,0.15); }
+    .hero-social-corner a[data-platform="deezer"]:hover { color: #A238FF; border-color: #A238FF; background: rgba(162,56,255,0.15); }
+    .hero-social-corner a[data-platform="soundcloud"]:hover { color: #FF3300; border-color: #FF3300; background: rgba(255,51,0,0.15); }
+    .hero-social-corner a[data-platform="boomplay"]:hover { color: #0FCC46; border-color: #0FCC46; background: rgba(15,204,70,0.15); }
+    .hero-social-corner a[data-platform="ytmusic"]:hover { color: #FF0000; border-color: #FF0000; background: rgba(255,0,0,0.15); }
+
+    .video-ad-overlay { transition: opacity 0.5s ease; }
+    .video-ad-overlay.hidden { opacity: 0; pointer-events: none; }
+    .video-section { position: relative; z-index: 1; }
+    .video-section img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+
+    /* ===== CURVED DIVIDER ===== */
+    .divider-curve {
+      position: relative;
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+      margin-top: -1px;
+      z-index: 5;
+    }
+    .divider-curve svg { position: absolute; width: 100%; height: 80px; }
+
+    /* ===== SECTION SHARED ===== */
+    .section {
+      padding: 100px 48px;
+      padding: 100px calc(48px + env(safe-area-inset-right)) 100px calc(48px + env(safe-area-inset-left));
+      position: relative;
+      z-index: 1;
+      background: rgba(10,10,10,0.88);
+    }
+    .hero + .divider-curve { margin-top: 100dvh; }
+    .section-label {
+      display: inline-block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 400;
+      font-size: 0.8rem;
+      letter-spacing: 4px;
+      color: #FFD700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #FFD700;
+      padding-bottom: 6px;
+    }
+    .section-title {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      margin-bottom: 20px;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 4px;
+      line-height: 1;
+    }
+    .section-title .highlight { color: #FFD700; }
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    .section-overlay-content {
+      position: relative; z-index: 1;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .bio-text p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 16px;
+      font-weight: 300;
+    }
+    .bio-stats {
+      display: flex;
+      gap: 36px;
+      margin-top: 28px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255,215,0,0.12);
+    }
+    .bio-stat h3 {
+      font-size: 2rem;
+      color: #FFD700;
+      font-family: 'Anton', sans-serif;
+    }
+    .bio-stat p { font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin: 0; font-family: 'Bebas Neue', sans-serif; }
+
+    /* ===== ALBUM ===== */
+    .album { background: transparent; overflow: hidden; }
+    .album-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .album-art {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 40px 100px rgba(255,215,0,0.1);
+    }
+    .album-art img { width: 100%; display: block; border-radius: 12px; }
+
+    .album-tracklist {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+      filter: url(#torn);
+      padding: 4px;
+      border: 1px solid rgba(255,215,0,0.1);
+    }
+    .album-track {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,215,0,0.06);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      filter: url(#torn);
+    }
+    .album-track:hover { background: rgba(255,215,0,0.06); border-color: rgba(255,215,0,0.2); }
+    .album-track:active { transform: translateX(6px); }
+    .album-track.playing { background: rgba(255,215,0,0.08); border-color: #FFD700; }
+    .album-track.playing .play-btn { background: #FFD700; }
+    .album-track.playing .play-btn svg { fill: #0a0a0a; }
+    .album-track.playing .album-track-num { opacity: 1; color: #FFD700; }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 8px rgba(255,215,0,0.2); } 50% { box-shadow: 0 0 20px rgba(255,215,0,0.4); } }
+    .album-track.playing { animation: pulse-glow 2s ease-in-out infinite; }
+    .album-track-num {
+      font-family: 'Anton', sans-serif;
+      font-size: 0.8rem;
+      color: #FFD700;
+      min-width: 24px;
+      letter-spacing: 1px;
+      opacity: 0.6;
+    }
+    .album-track-info { flex: 1; min-width: 0; }
+    .album-track-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .album-track-artist {
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.4);
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+    .album-track .play-btn {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,215,0,0.1);
+      border: 1px solid rgba(255,215,0,0.15);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+    .album-track .play-btn svg { width: 14px; height: 14px; fill: #FFD700; }
+    .album-track .play-btn:hover { background: #FFD700; }
+    .album-track .play-btn:hover svg { fill: #0a0a0a; }
+    .album-track .play-btn:active { transform: scale(1.1); }
+    .album-countdown {
+      display: flex;
+      gap: 20px;
+      margin: 28px 0;
+      flex-wrap: wrap;
+    }
+    .countdown-box { text-align: center; min-width: 64px; }
+    .countdown-box .num {
+      font-family: 'Anton', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: #FFD700;
+      display: block;
+      line-height: 1;
+    }
+    .countdown-box .label {
+      font-size: 0.55rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-top: 6px;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      touch-action: manipulation;
+    }
+    .btn-primary {
+      background: #FFD700;
+      color: #0a0a0a;
+    }
+    .btn-primary:hover { background: #fff; }
+    .btn-primary:active { transform: scale(0.95); }
+    .btn-outline {
+      background: transparent;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+    }
+    .btn-outline:hover { background: #FFD700; color: #0a0a0a; }
+    .btn-outline:active { transform: scale(0.95); }
+    [press]:active, button:active, .btn:active, .btn-hero:active, .splashscreen-btn:active,
+    .stream-badge:active, .tour-tab:active, .hamburger:active { transform: scale(0.93); }
+    .nav-logo[press]:active { transform: translateX(-50%) scale(0.93); transition: transform 0.08s ease; }
+    [press], button, .btn, .btn-hero, .splashscreen-btn, .stream-badge, .tour-tab, .hamburger, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+    [press].pressed, button.pressed, .btn.pressed, .btn-hero.pressed, .splashscreen-btn.pressed,
+    .stream-badge.pressed, .tour-tab.pressed, .hamburger.pressed { transform: scale(0.93); }
+    .nav-logo[press].pressed { transform: translateX(-50%) scale(0.93); }
+
+    /* ===== STREAMING BADGES ===== */
+    .stream-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+    .stream-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,215,0,0.12);
+      border-radius: 6px;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.65rem;
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 2px;
+      transition: all 0.3s ease;
+    }
+    .stream-badge svg { width: 14px; height: 14px; fill: currentColor; }
+    .stream-badge:hover { border-color: #FFD700; background: rgba(255,215,0,0.08); color: #FFD700; }
+    .stream-badge:active { transform: scale(0.93); }
+
+    /* ===== MUSIC ===== */
+    .music { background: transparent; overflow: hidden; }
+    .music-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+      border: 1px solid rgba(255,215,0,0.08);
+    }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .spotify-embed { overflow: hidden; border: 1px solid rgba(255,215,0,0.08); }
+    .spotify-embed iframe { width: 100%; height: 152px; border: none; }
+
+    /* ===== MERCH ===== */
+    .merch { position: relative; overflow: hidden; background: transparent; }
+    .merch::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('ALBUM%20RELEASE.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.06;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .merch > * { position: relative; z-index: 1; }
+    .merch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .merch-card {
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,215,0,0.08);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+      transition: all 0.5s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .merch-card:hover {
+      border-color: #FFD700;
+      transform: translateY(-8px);
+      box-shadow: 0 25px 70px rgba(255,215,0,0.08);
+      background: rgba(255,255,255,0.04);
+    }
+    .merch-card img { width: 100%; max-width: 200px; height: auto; margin-bottom: 16px; transition: transform 0.6s ease; }
+    .merch-card:hover img { transform: scale(1.06) rotate(-2deg); }
+    .merch-card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .merch-card .price { font-size: 1.4rem; color: #FFD700; font-weight: 400; font-family: 'Anton', sans-serif; letter-spacing: 2px; }
+
+    /* ===== TOUR ===== */
+    .tour { overflow: hidden; }
+    .tour-tabs { background: rgba(10,10,10,0.5); backdrop-filter: blur(12px); }
+    .tour-item { background: rgba(10,10,10,0.35); backdrop-filter: blur(8px); }
+    .tour-item:hover { background: rgba(255,215,0,0.08); backdrop-filter: blur(8px); }
+    .tour-tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 32px;
+      background: rgba(255,255,255,0.02);
+      border-radius: 8px;
+      padding: 4px;
+      max-width: 320px;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .tour-tab {
+      flex: 1;
+      padding: 12px 20px;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.3s;
+      touch-action: manipulation;
+    }
+    .tour-tab.active { background: #FFD700; color: #0a0a0a; }
+    .tour-list { display: flex; flex-direction: column; gap: 2px; }
+    .tour-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      background: rgba(255,255,255,0.015);
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      transition: all 0.4s ease;
+      cursor: pointer;
+      gap: 12px;
+    }
+    .tour-item:hover { background: rgba(255,215,0,0.04); }
+    .tour-item:active { padding-left: 30px; }
+    .tour-date {
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #FFD700;
+      min-width: 60px;
+      letter-spacing: 2px;
+      flex-shrink: 0;
+    }
+    .tour-city { font-weight: 700; font-size: 0.95rem; flex-shrink: 0; }
+    .tour-venue { color: rgba(255,255,255,0.4); font-size: 0.8rem; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .tour-status {
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-size: 0.55rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+    .tour-status.sold { background: rgba(255,0,51,0.1); color: #FF0033; border: 1px solid rgba(255,0,51,0.2); }
+    .tour-status.avail { background: rgba(255,215,0,0.08); color: #FFD700; border: 1px solid rgba(255,215,0,0.15); }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      padding: 80px 48px 30px;
+      border-top: 1px solid rgba(255,215,0,0.06);
+      background: rgba(10,10,10,0.88);
+    }
+    .footer > * { position: relative; z-index: 2; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto 40px;
+    }
+    .footer-brand img { height: 40px; width: auto; margin-bottom: 14px; }
+    .footer-brand p { font-size: 0.8rem; color: rgba(255,255,255,0.45); line-height: 1.8; max-width: 300px; }
+    .footer h4 { font-size: 0.8rem; letter-spacing: 3px; color: #FFD700; margin-bottom: 18px; font-family: 'Anton', sans-serif; text-transform: uppercase; }
+    .footer ul { list-style: none; }
+    .footer ul li { margin-bottom: 10px; }
+    .footer ul li a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 0.8rem; text-transform: uppercase; font-family: 'Anton', sans-serif; letter-spacing: 2px; transition: color 0.3s; }
+    .footer ul li a:hover { color: #FFD700; }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-bottom p { font-size: 0.65rem; color: rgba(255,255,255,0.25); letter-spacing: 1px; }
+    .footer-privacy { color: rgba(255,255,255,0.25); text-decoration: none; transition: color 0.3s; }
+    .footer-privacy:hover { color: #FFD700; }
+    .social-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .social-links a {
+      width: 40px; height: 40px;
+      border: 1px solid rgba(255,215,0,0.25);
+      display: flex; align-items: center; justify-content: center;
+      color: #FFD700;
+      text-decoration: none;
+      transition: all 0.3s;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+    }
+    .social-links a svg { width: 16px; height: 16px; fill: currentColor; }
+    .social-links a:hover {
+      transform: scale(1.12);
+      background: rgba(255,215,0,0.15);
+      border-color: #FFD700;
+    }
+    .footer-input {
+      display: flex;
+      gap: 0;
+      margin-top: 12px;
+    }
+    .footer-input input {
+      flex: 1;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,215,0,0.15);
+      color: #fff;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      outline: none;
+    }
+    .footer-input input::placeholder { color: rgba(255,255,255,0.25); }
+    .footer-input button {
+      padding: 10px 18px;
+      background: #FFD700;
+      border: none;
+      color: #0a0a0a;
+      font-family: 'Anton', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .footer-input button:active { background: #fff; transform: scale(0.95); }
+
+    /* ===== FLOATING PARTICLES ===== */
+    .particles {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .particle {
+      position: absolute;
+      width: 3px; height: 3px;
+      background: #FFD700;
+      border-radius: 50%;
+      opacity: 0;
+    }
+    @keyframes floatP {
+      0% { transform: translateY(0) translateX(0); opacity: 0; }
+      10% { opacity: var(--p-opacity, 0.1); }
+      90% { opacity: var(--p-opacity, 0.1); }
+      100% { transform: translateY(-100vh) translateX(var(--drift, 0px)); opacity: 0; }
+    }
+
+    /* ===== MOUSE TRAILER ===== */
+    .trailer {
+      position: fixed;
+      width: 10px; height: 10px;
+      background: #FFD700;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 99999;
+      mix-blend-mode: difference;
+      transition: transform 0.1s, opacity 0.3s;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+
+    /* ===== RESPONSIVE: TABLETS & MOBILE (hamburger nav) ===== */
+    @media (max-width: 1024px) {
+      .section { padding: 80px 32px; padding: 80px calc(32px + env(safe-area-inset-right)) 80px calc(32px + env(safe-area-inset-left)); }
+      .navbar { padding: 14px 24px; }
+      .album-grid { gap: 40px; }
+      .music-grid { gap: 32px; }
+      .hero-social-corner { right: 20px; bottom: 24px; gap: 4px; }
+      .hero-social-corner a { width: 34px; height: 34px; }
+      .hero-social-corner a svg { width: 14px; height: 14px; }
+      .navbar .btn-primary { padding: 10px 18px !important; font-size: 0.85rem !important; }
+      .nav-logo img { height: 50px; }
+      .navbar.scrolled .nav-logo img { height: 44px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .navbar-right { margin-left: auto; }
+      .navbar-left-mobile { display: flex; }
+      .navbar-right-tickets { display: none !important; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 80px 24px 40px;
+        gap: 8px;
+        align-items: flex-end;
+        justify-content: flex-start;
+        z-index: 99999;
+        pointer-events: none;
+      }
+      .nav-links.open li {
+        width: auto;
+        text-align: right;
+        pointer-events: auto;
+        opacity: 0;
+        transform: translateX(120%);
+        animation: slideInNav 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .nav-links.open li:nth-child(2) { animation-delay: 0.10s; }
+      .nav-links.open li:nth-child(3) { animation-delay: 0.20s; }
+      .nav-links.open li:nth-child(4) { animation-delay: 0.30s; }
+      .nav-links.open li:nth-child(5) { animation-delay: 0.40s; }
+      .nav-links.open a {
+        font-size: 2.2rem;
+        letter-spacing: 4px;
+        color: #FFD700;
+        filter: url(#torn);
+        padding: 8px 0;
+        display: inline-block;
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+      }
+      .nav-links.closing li {
+        animation: slideOutNav 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .nav-links.closing li:nth-child(2) { animation-delay: 0.06s; }
+      .nav-links.closing li:nth-child(3) { animation-delay: 0.12s; }
+      .nav-links.closing li:nth-child(4) { animation-delay: 0.18s; }
+      .nav-links.closing li:nth-child(5) { animation-delay: 0.24s; }
+      @keyframes slideInNav {
+        0% { opacity: 0; transform: translateX(120%); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes slideOutNav {
+        0% { opacity: 1; transform: translateX(0); }
+        100% { opacity: 0; transform: translateX(120%); }
+      }
+    }
+
+    /* ===== RESPONSIVE: LARGE TABLETS ===== */
+    @media (max-width: 900px) {
+      .album-grid { grid-template-columns: 1fr; gap: 36px; }
+      .music-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .footer { padding: 60px 32px 24px; }
+      .hero-social-corner a { width: 32px; height: 32px; }
+      .hero-social-corner a svg { width: 13px; height: 13px; }
+    }
+
+    /* ===== RESPONSIVE: SMALL MOBILE ===== */
+    @media (max-width: 768px) {
+      .section { padding: 64px 20px; padding: 64px calc(20px + env(safe-area-inset-right)) 64px calc(20px + env(safe-area-inset-left)); }
+      .navbar { padding: 12px 16px; }
+      .navbar.scrolled { padding: 10px 16px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .hero-social-corner a { width: 28px; height: 28px; }
+      .hero-social-corner a svg { width: 12px; height: 12px; }
+      .divider-curve { height: 50px; }
+      .divider-curve svg { height: 50px; }
+      .tour-item { flex-wrap: nowrap; padding: 12px 12px; gap: 6px; }
+      .tour-date { font-size: 0.85rem; min-width: 40px; }
+      .tour-city { font-size: 0.75rem; }
+      .tour-venue { display: none; }
+      .bio-stats { gap: 16px; flex-wrap: wrap; }
+      .countdown-box { min-width: 48px; }
+      .countdown-box .num { font-size: 1.8rem; }
+      .footer-input { flex-direction: column; gap: 6px; }
+      .footer-input input { width: 100%; }
+      .footer-input button { width: 100%; padding: 12px 18px; }
+      .nav-links.open a { font-size: 1.8rem; }
+      .nav-links.open { padding: 70px 20px 30px; }
+      .splashscreen-content h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
+      .hero-content h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
+    }
+
+    /* ===== RESPONSIVE: SMALL PHONES ===== */
+    @media (max-width: 480px) {
+      .section { padding: 48px 16px; padding: 48px calc(16px + env(safe-area-inset-right)) 48px calc(16px + env(safe-area-inset-left)); }
+      .navbar { padding: 10px 12px; }
+      .navbar.scrolled { padding: 8px 12px; }
+      .navbar .btn-primary { padding: 8px 14px !important; font-size: 0.75rem !important; }
+      .nav-logo img { height: 44px; }
+      .navbar.scrolled .nav-logo img { height: 38px; }
+      .nav-links.open { padding: 60px 16px 30px; }
+      .nav-links.open a { font-size: 1.6rem; letter-spacing: 3px; }
+      .section-title { font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: 3px; }
+      .section-label { font-size: 0.7rem; }
+      .bio-text p { font-size: 0.9rem; line-height: 1.7; }
+      .bio-stat h3 { font-size: 1.6rem; }
+      .album-countdown { gap: 12px; }
+      .countdown-box .num { font-size: 1.8rem; }
+      .countdown-box { min-width: 48px; }
+      .merch-grid { grid-template-columns: 1fr; gap: 16px; }
+      .merch-card { padding: 20px 16px; }
+      .album-track { padding: 6px 10px; gap: 8px; }
+      .album-track-title { font-size: 0.78rem; }
+      .album-track-num { font-size: 0.7rem; min-width: 20px; }
+      .album-track .play-btn { width: 28px; height: 28px; }
+      .album-track .play-btn svg { width: 12px; height: 12px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer { padding: 60px 20px 24px; }
+      .footer-brand p { max-width: 100%; }
+      .tour-tabs { max-width: 100%; }
+      .tour-date { font-size: 0.9rem; min-width: 44px; letter-spacing: 1px; }
+      .tour-city { font-size: 0.8rem; }
+      .tour-status { font-size: 0.5rem; padding: 3px 10px; }
+      .stream-badge { font-size: 0.6rem; padding: 6px 10px; }
+      .stream-badge svg { width: 12px; height: 12px; }
+      .hero-social-corner a { width: 24px; height: 24px; }
+      .hero-social-corner a svg { width: 11px; height: 11px; }
+      .hero-buttons .btn-hero { padding: 8px 16px; font-size: 0.7rem; letter-spacing: 2px; }
+      .btn { padding: 12px 24px; font-size: 0.8rem; }
+      .splashscreen-content h1 { font-size: clamp(2rem, 7vw, 3rem); }
+      .hero-content h1 { font-size: clamp(2rem, 7vw, 3rem); }
+    }
+
+    /* ===== RESPONSIVE: VERY SMALL PHONES ===== */
+    @media (max-width: 360px) {
+      .section { padding: 40px 10px; }
+      .navbar { padding: 6px 8px; }
+      .nav-logo img { height: 38px; }
+      .navbar.scrolled .nav-logo img { height: 34px; }
+      .nav-links.open a { font-size: 1rem; }
+      .tour-item { padding: 10px 12px; }
+      .tour-date { font-size: 0.8rem; min-width: 38px; }
+      .btn { padding: 10px 20px; font-size: 0.75rem; }
+      .hero-social-corner a { width: 22px; height: 22px; }
+      .hero-social-corner a svg { width: 10px; height: 10px; }
+      .splashscreen-content h1 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
+    }
+
+    /* ===== SPLASHSCREEN ===== */
+    .splashscreen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100dvh;
+      z-index: 100000;
+      background: #0a0a0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .splashscreen-video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .splashscreen-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    .splashscreen-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 900px;
+      padding: 20px;
+      padding: calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));
+    }
+    .splashscreen-content * { pointer-events: none; }
+    .splashscreen-btn { pointer-events: auto; }
+    .splashscreen-content h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(3rem, 10vw, 7rem);
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      line-height: 1;
+      color: #fff;
+      filter: url(#torn);
+      margin-bottom: 10px;
+      animation: splashIn 0.8s ease-out;
+    }
+    .splashscreen-content h1 .highlight { color: #FFD700; }
+    .splashscreen-content .splashscreen-tagline {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1rem, 3vw, 1.8rem);
+      letter-spacing: 6px;
+      color: rgba(255,255,255,0.6);
+      filter: url(#torn);
+      animation: splashBtnIn 0.6s ease-out 0.4s both;
+    }
+    .splashscreen-btn {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #0a0a0a;
+      background: #FFD700;
+      border: none;
+      padding: 16px 48px;
+      cursor: pointer;
+      filter: url(#torn);
+      transition: all 0.3s ease;
+      touch-action: manipulation;
+      margin-top: 40px;
+      animation: splashBtnIn 0.6s ease-out 0.6s both;
+    }
+    .splashscreen-btn:hover { background: #fff; transform: scale(1.05); }
+    .splashscreen-btn:active { transform: scale(0.95); }
+    .splashscreen.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.6s ease;
+    }
+    @keyframes splashIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes splashBtnIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== PERFORMANCE: CSS containment ===== */
+    .gpu { transform: translateZ(0); will-change: transform; }
+    .scroll-from-left, .scroll-from-right, .scroll-fade, .scroll-zoom,
+    .section-reveal, .parallax-bg { will-change: transform, opacity; }
+    section.section, footer.footer, .splashscreen, .hero {
+      content-visibility: auto;
+      contain: content;
+      contain-intrinsic-size: 1px 500px;
+    }
+    .hero { content-visibility: visible; contain: none; }
+    .splashscreen { content-visibility: visible; contain: none; }
+    .album-tracklist, .stream-grid, .tour-list { content-visibility: auto; contain: content; }
+    img, video, iframe { max-width: 100%; height: auto; }
+    video[poster] { background-size: cover; background-position: center; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* === NEW FAN SECTIONS === */
+    .fan-form { max-width: 600px; margin: 0 auto; }
+    .fan-form input, .fan-form textarea, .fan-form select {
+      width: 100%; padding: 12px 16px; margin-bottom: 14px;
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      color: #fff; font-family: 'Lato', sans-serif; font-size: 0.9rem;
+      outline: none; border-radius: 6px; transition: border 0.2s;
+    }
+    .fan-form input:focus, .fan-form textarea:focus { border-color: #FFD700; }
+    .fan-form textarea { min-height: 100px; resize: vertical; }
+    .fan-form button { width: 100%; }
+    .fan-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 600px) { .fan-form .form-row { grid-template-columns: 1fr; } }
+
+    .merch-grid-display { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+    .merch-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+    .merch-card:hover { border-color: #FFD700; transform: translateY(-4px); }
+    .merch-card img { width: 100%; height: 240px; object-fit: cover; display: block; }
+    .merch-card-body { padding: 16px; }
+    .merch-card-body h3 { font-family: 'Anton', sans-serif; font-size: 1.1rem; letter-spacing: 2px; color: #FFD700; margin-bottom: 4px; }
+    .merch-card-body .price { font-family: 'Anton', sans-serif; font-size: 1.3rem; color: #fff; }
+    .merch-card-body p { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin: 6px 0 12px; }
+    .btn-merch { width: 100%; padding: 10px; font-family: 'Anton', sans-serif; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; background: #FFD700; color: #0a0a0a; border: none; cursor: pointer; transition: all 0.2s; border-radius: 6px; touch-action: manipulation; }
+    .btn-merch:hover { background: #fff; }
+    .btn-merch:active { transform: scale(0.98); }
+    .btn-merch.added { background: #22c55e; }
+
+    .fan-wall { max-width: 700px; margin: 0 auto; }
+    .fan-wall .wall-post { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+    .fan-wall .wall-post .post-name { font-family: 'Anton', sans-serif; color: #FFD700; font-size: 0.85rem; letter-spacing: 2px; }
+    .fan-wall .wall-post .post-date { font-size: 0.65rem; color: rgba(255,255,255,0.3); margin-top: 2px; }
+    .fan-wall .wall-post .post-msg { font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-top: 8px; line-height: 1.5; }
+
+    .challenge-quiz { max-width: 600px; margin: 0 auto; }
+    .challenge-quiz .quiz-question { margin-bottom: 20px; padding: 20px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; }
+    .challenge-quiz .quiz-question h4 { font-family: 'Anton', sans-serif; font-size: 0.9rem; letter-spacing: 1px; color: #FFD700; margin-bottom: 10px; }
+    .challenge-quiz .quiz-option { display: block; padding: 10px 14px; margin-bottom: 6px; border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }
+    .challenge-quiz .quiz-option:hover { border-color: #FFD700; }
+    .challenge-quiz .quiz-option input { display: none; }
+    .challenge-quiz .quiz-option input:checked + span { color: #FFD700; }
+    .challenge-quiz .quiz-option.selected { border-color: #FFD700; background: rgba(255,215,0,0.1); }
+
+    .leaderboard-list { max-width: 500px; margin: 20px auto 0; }
+    .leaderboard-list .lb-entry { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .leaderboard-list .lb-rank { font-family: 'Anton', sans-serif; font-size: 1.1rem; color: #FFD700; width: 40px; }
+    .leaderboard-list .lb-name { flex: 1; font-size: 0.85rem; }
+    .leaderboard-list .lb-score { font-family: 'Anton', sans-serif; color: #FFD700; font-size: 0.9rem; }
+
+    .result-overlay { text-align: center; padding: 40px; }
+    .result-overlay .big-score { font-family: 'Anton', sans-serif; font-size: 4rem; color: #FFD700; }
+    .result-overlay .result-msg { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-top: 10px; }
+
+    .order-form-wrap { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
+    .order-form-wrap.open { display: flex; }
+    .order-form-inner { background: #121212; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; width: 100%; max-width: 520px; max-height: 90vh; overflow-y: auto; padding: 28px; }
+    .order-form-inner h3 { font-family: 'Anton', sans-serif; font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 20px; text-transform: uppercase; color: #FFD700; }
+    .order-form-inner .order-items { margin-bottom: 16px; }
+    .order-form-inner .order-items .order-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 0.85rem; }
+    .order-form-inner .order-total { font-family: 'Anton', sans-serif; font-size: 1.2rem; color: #FFD700; text-align: right; padding: 12px 0; }
+
+    .guidance-text { max-width: 700px; margin: 0 auto; line-height: 1.8; font-size: 0.95rem; color: rgba(255,255,255,0.7); }
+  </style>
+</head>
+<body>
+
+<div class="splashscreen" id="splashscreen">
+  <video class="splashscreen-video" id="splashVideo" autoplay muted loop playsinline poster="HERO%20PAGE.png" fetchpriority="high" preload="auto">
+    <source src="I%20knoww.mp4" type="video/mp4">
+  </video>
+  <div class="splashscreen-overlay"></div>
+  <div class="splashscreen-content">
+    <h1>EF <span class="highlight">Moon</span></h1>
+    <p class="splashscreen-tagline">The Moonite Era</p>
+    <button class="splashscreen-btn" id="splashBtn">Enter</button>
+  </div>
+</div>
+
+<div class="trailer" id="trailer"></div>
+<div class="particles" id="particles"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#bio" class="nav-link torn-edge">Bio</a></li>
+    <li><a href="#music" class="nav-link torn-edge">Music</a></li>
+    <li><a href="#album" class="nav-link torn-edge">Album</a></li>
+    <li><a href="#merch" class="nav-link torn-edge">Merch</a></li>
+    <li><a href="#tour" class="nav-link torn-edge">Tour</a></li>
+  </ul>
+  <a href="#" class="nav-logo" press id="homeBtn"><img src="LOGO%202.png" alt="EF Moon" width="60" height="60" fetchpriority="high" decoding="sync"></a>
+  <div class="navbar-left-mobile">
+    <a href="#tour" class="btn-primary torn-edge" style="padding:12px 28px; font-size:1.2rem;" press>Tickets</a>
+  </div>
+  <div class="navbar-right" style="display:flex; align-items:center; gap:12px;">
+    <a href="#tour" class="btn-primary torn-edge navbar-right-tickets" style="padding:12px 28px; font-size:1.2rem;" press>Tickets</a>
+    <button press class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-aurora"></div>
+  <video class="hero-video" id="heroVideo" muted loop playsinline poster="HERO%20PAGE.png" fetchpriority="high" preload="none" data-src="I%20knoww.mp4">
+  </video>
+  <img class="hero-video-mobile-fallback" src="HERO%20PAGE.png" alt="" aria-hidden="true" fetchpriority="high" decoding="sync">
+  <div class="hero-overlay"></div>
+  <div class="hero-content" style="display:none;"></div>
+</section>
+
+<div class="hero-social-corner" id="heroSocialCorner">
+  <a href="https://www.instagram.com/ef_moon2000/" target="_blank" aria-label="Instagram" data-platform="instagram">
+    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+  </a>
+  <a href="https://www.youtube.com/@ef_moon" target="_blank" aria-label="YouTube" data-platform="youtube">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+  </a>
+  <a href="https://www.facebook.com/61571833882841" target="_blank" aria-label="Facebook" data-platform="facebook">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+  </a>
+  <a href="https://x.com/EF555" target="_blank" aria-label="X" data-platform="x">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  </a>
+  <a href="http://tiktok.com/@elijahfriday" target="_blank" aria-label="TikTok" data-platform="tiktok">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+  </a>
+  <a href="https://open.spotify.com/artist/0fFQ89LOIU2Bc8bRacEyv9" target="_blank" aria-label="Spotify" data-platform="spotify">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+  </a>
+  <a href="https://music.apple.com/ng/artist/ef-moon/1717113178" target="_blank" aria-label="Apple Music" data-platform="applemusic">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.67-.81 1.1-1.9 1-3-1.06.04-2.31.66-3.08 1.52-.69.77-1.1 1.86-.97 2.95 1.06.07 2.19-.58 3.05-1.47z"/></svg>
+  </a>
+  <a href="https://audiomack.com/ef_moon" target="_blank" aria-label="Audiomack" data-platform="audiomack">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
+  </a>
+  <a href="https://www.deezer.com/en/artist/243717582" target="_blank" aria-label="Deezer" data-platform="deezer">
+    <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="4" height="2" /><rect x="11" y="4" width="4" height="2" /><rect x="19" y="4" width="2" height="2" /><rect x="3" y="10" width="3" height="2" /><rect x="14" y="10" width="7" height="2" /><rect x="3" y="16" width="5" height="2" /><rect x="11" y="16" width="3" height="2" /><rect x="17" y="16" width="4" height="2" /></svg>
+  </a>
+  <a href="https://soundcloud.com/elijah-friday-339590423" target="_blank" aria-label="SoundCloud" data-platform="soundcloud">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1 14v3h2v-3H1zm3 0v4h2v-4H4zm3-2v6h2v-6H7zm3-3v9h2V9h-2zm3 1v8h2v-8h-2zm3-2v10h2V8h-2zm3-1v11h2V7h-2zm3-2v13h2V5h-2z"/></svg>
+  </a>
+  <a href="https://www.boomplay.com/artists/80358106" target="_blank" aria-label="Boomplay" data-platform="boomplay">
+    <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><polygon points="10,8 10,16 17,12" fill="#0a0a0a"/></svg>
+  </a>
+  <a href="https://music.youtube.com/channel/UC4EZ9rf4WKv6ZwiZCjRDtsg" target="_blank" aria-label="YouTube Music" data-platform="ytmusic">
+    <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><polygon points="9.5,7.5 9.5,16.5 16.5,12"/></svg>
+  </a>
+</div>
+
+<div class="divider-curve">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== VIDEO ===== -->
+<section class="section video-section burnt-edge" id="video" style="display:flex;align-items:center;justify-content:center;overflow:hidden;padding:0;">
+  <div style="position:relative;width:100%;height:100dvh;background:#0a0a0a;">
+    <div id="videoAdOverlay" style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:rgba(10,10,10,0.65);cursor:pointer;z-index:2;">
+      <svg viewBox="0 0 24 24" style="width:80px;height:80px;"><circle cx="12" cy="12" r="11" fill="#FF0000"/><polygon points="9,6.5 9,17.5 18,12" fill="#fff"/></svg>
+    </div>
+    <div id="ytVideoContainer" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      <img src="https://img.youtube.com/vi/lfR4cWUjt-M/hqdefault.jpg" alt="EF Moon - I knoww" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;" fetchpriority="high">
+    </div>
+    <iframe id="ytVideoAd" src="about:blank" title="EF Moon - I Knoww (Official Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:50%;left:50%;width:177.78vh;height:100dvh;min-width:100%;transform:translate(-50%,-50%);border:none;opacity:0;pointer-events:none;transition:opacity 0.5s;"></iframe>
+  </div>
+</section>
+
+<div class="divider-curve">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== BIO ===== -->
+<section class="section bio burnt-edge" id="bio" style="background:transparent;overflow:hidden;">
+  <video class="lazy-video" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;" muted loop playsinline preload="none" data-src="HERO%20SECTION%202.mp4">
+  </video>
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(10,10,10,0.75);z-index:1;pointer-events:none;"></div>
+  <div class="section-overlay-content" style="position:relative;z-index:2;">
+    <div style="max-width:700px;margin:0 auto;">
+      <div class="scroll-from-left">
+        <span class="section-label torn-edge">The Story</span>
+        <h2 class="section-title torn-edge">Who Is <span class="highlight">EF Moon</span>?</h2>
+      </div>
+      <p class="scroll-fade torn-edge" style="font-size:1rem; line-height:1.8; color:rgba(255,255,255,0.85); margin:0 auto 16px; font-weight:300;font-family:'Lato',sans-serif;">EF Moon — born <strong>Elijah Friday</strong> — is a fast-rising Nigerian Afro-beat sensation taking the industry by storm. Hailing from the vibrant Nigerian music scene, EF Moon blends infectious melodies with raw lyrical storytelling, creating a sound that's both fresh and timeless.</p>
+      <p class="scroll-fade torn-edge" style="font-size:1rem; line-height:1.8; color:rgba(255,255,255,0.85); margin:0 auto 24px; font-weight:300;font-family:'Lato',sans-serif;">With his debut album <strong>"MOON 1"</strong> and the smash single <strong>"I knoww"</strong> featuring Star Jay, EF Moon is quickly establishing himself as the voice of a new generation.</p>
+      <div class="bio-stats scroll-from-right" style="justify-content:center;">
+        <div class="bio-stat"><h3>28K+</h3><p>Followers</p></div>
+        <div class="bio-stat"><h3>15+</h3><p>Singles</p></div>
+        <div class="bio-stat"><h3>1</h3><p>Album</p></div>
+        <div class="bio-stat"><h3>2023</h3><p>Since</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-curve" style="transform: rotate(180deg);">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== ALBUM ===== -->
+<section class="section album" id="album">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:40px;">
+      <span class="section-label scroll-from-left torn-edge">Out Now</span>
+      <h2 class="section-title scroll-from-right torn-edge">MOON <span class="highlight">1</span></h2>
+    </div>
+    <div class="album-grid">
+      <div class="album-art scroll-from-left">
+        <img src="ALBUM%20RELEASE.png" alt="MOON 1 Album Cover" loading="lazy" decoding="async" style="width:100%;display:block;border-radius:12px;" fetchpriority="low">
+      </div>
+      <div class="scroll-from-right">
+        <p style="font-size:1rem; line-height:1.8; color:rgba(255,255,255,0.7); margin:0 0 20px;">
+          The debut album from EF Moon. 9 tracks, 19 minutes of pure fire. Includes the hit single "I knoww" featuring Star Jay. Available everywhere.
+        </p>
+        <div class="album-countdown scroll-zoom" style="justify-content:flex-start;">
+          <div class="countdown-box"><span class="num" id="cdDays">00</span><span class="label">Days</span></div>
+          <div class="countdown-box"><span class="num" id="cdHours">00</span><span class="label">Hours</span></div>
+          <div class="countdown-box"><span class="num" id="cdMins">00</span><span class="label">Mins</span></div>
+          <div class="countdown-box"><span class="num" id="cdSecs">00</span><span class="label">Secs</span></div>
+        </div>
+        <div class="stream-grid scroll-fade" style="justify-content:flex-start;">
+          <a href="https://open.spotify.com/artist/0fFQ89LOIU2Bc8bRacEyv9" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg> Spotify</a>
+          <a href="https://music.apple.com/ng/artist/ef-moon/1717113178" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.67-.81 1.1-1.9 1-3-1.06.04-2.31.66-3.08 1.52-.69.77-1.1 1.86-.97 2.95 1.06.07 2.19-.58 3.05-1.47z"/></svg> Apple Music</a>
+          <a href="https://audiomack.com/ef_moon" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12" fill="currentColor"/></svg> Audiomack</a>
+          <a href="https://www.deezer.com/en/artist/243717582" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="4" height="2"  fill="currentColor"/><rect x="11" y="4" width="4" height="2"  fill="currentColor"/><rect x="19" y="4" width="2" height="2"  fill="currentColor"/><rect x="3" y="10" width="3" height="2"  fill="currentColor"/><rect x="14" y="10" width="7" height="2"  fill="currentColor"/><rect x="3" y="16" width="5" height="2"  fill="currentColor"/><rect x="11" y="16" width="3" height="2"  fill="currentColor"/><rect x="17" y="16" width="4" height="2"  fill="currentColor"/></svg> Deezer</a>
+          <a href="https://www.boomplay.com/artists/80358106" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 10,16 17,12" fill="currentColor"/></svg> Boomplay</a>
+          <a href="https://music.youtube.com/channel/UC4EZ9rf4WKv6ZwiZCjRDtsg" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,7.5 10,16.5 17,12" fill="currentColor"/></svg> YouTube Music</a>
+          <a href="https://soundcloud.com/elijah-friday-339590423" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><path d="M1 14v3h2v-3H1zm3 0v4h2v-4H4zm3-2v6h2v-6H7zm3-3v9h2V9h-2zm3 1v8h2v-8h-2zm3-2v10h2V8h-2zm3-1v11h2V7h-2zm3-2v13h2V5h-2z"/></svg> SoundCloud</a>
+        </div>
+        <h3 style="font-size:1rem; margin:28px 0 14px; color:#FFD700; font-family:'Anton',sans-serif; letter-spacing:3px;">Tracklist</h3>
+        <div class="album-tracklist scroll-fade" id="albumTracklist">
+          <div class="album-track" data-track="ytLifeIsSlo">
+            <span class="album-track-num">01</span>
+            <div class="album-track-info">
+              <div class="album-track-title">Life Is Slo</div>
+              <div class="album-track-artist">EF Moon, Fosa</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+          <div class="album-track" data-track="ytIKnoww">
+            <span class="album-track-num">02</span>
+            <div class="album-track-info">
+              <div class="album-track-title">I Knoww</div>
+              <div class="album-track-artist">EF Moon, Star Jay</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+          <div class="album-track" data-track="ytExpress">
+            <span class="album-track-num">03</span>
+            <div class="album-track-info">
+              <div class="album-track-title">Express</div>
+              <div class="album-track-artist">EF Moon, Star Jay</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+          <div class="album-track" data-track="ytFearful">
+            <span class="album-track-num">04</span>
+            <div class="album-track-info">
+              <div class="album-track-title">Fearful</div>
+              <div class="album-track-artist">EF Moon, Star Jay</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+          <div class="album-track" data-track="ytRrhoids">
+            <span class="album-track-num">05</span>
+            <div class="album-track-info">
+              <div class="album-track-title">Rrhoids</div>
+              <div class="album-track-artist">EF Moon, Star Jay</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+          <div class="album-track" data-track="ytRelax">
+            <span class="album-track-num">06</span>
+            <div class="album-track-info">
+              <div class="album-track-title">Relax</div>
+              <div class="album-track-artist">EF Moon, Star Jay</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+          <div class="album-track" data-track="ytNoTrustMe">
+            <span class="album-track-num">07</span>
+            <div class="album-track-info">
+              <div class="album-track-title">No Trust Me</div>
+              <div class="album-track-artist">EF Moon, Star Jay</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+          <div class="album-track" data-track="ytAnimal">
+            <span class="album-track-num">08</span>
+            <div class="album-track-info">
+              <div class="album-track-title">Animal</div>
+              <div class="album-track-artist">EF Moon, Star Jay</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+          <div class="album-track" data-track="ytY">
+            <span class="album-track-num">09</span>
+            <div class="album-track-info">
+              <div class="album-track-title">Y</div>
+              <div class="album-track-artist">EF Moon, Star Jay</div>
+            </div>
+            <div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hidden YouTube iframes for audio playback (need dimensions for API events) -->
+    <div aria-hidden="true" style="position:fixed;bottom:0;right:0;width:320px;height:180px;opacity:0.001;pointer-events:none;z-index:-1;">
+      <iframe id="ytLifeIsSlo" data-video="zg5xxvm19cA" src="https://www.youtube.com/embed/zg5xxvm19cA?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+      <iframe id="ytIKnoww" data-video="7CD17J4V44A" src="https://www.youtube.com/embed/7CD17J4V44A?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+      <iframe id="ytExpress" data-video="3AC2ATpVMkI" src="https://www.youtube.com/embed/3AC2ATpVMkI?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+      <iframe id="ytFearful" data-video="pHBHJHfEde4" src="https://www.youtube.com/embed/pHBHJHfEde4?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+      <iframe id="ytRrhoids" data-video="0HAVsFK_ulI" src="https://www.youtube.com/embed/0HAVsFK_ulI?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+      <iframe id="ytRelax" data-video="b4QgLclOWYE" src="https://www.youtube.com/embed/b4QgLclOWYE?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+      <iframe id="ytNoTrustMe" data-video="6_H6HVpyKUg" src="https://www.youtube.com/embed/6_H6HVpyKUg?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+      <iframe id="ytAnimal" data-video="onwYY3noUxU" src="https://www.youtube.com/embed/onwYY3noUxU?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+      <iframe id="ytY" data-video="qKGl5LoGcxY" src="https://www.youtube.com/embed/qKGl5LoGcxY?enablejsapi=1&autoplay=0&mute=1&rel=0&controls=0" allow="autoplay; encrypted-media" style="width:320px;height:180px;border:0;"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="divider-curve">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== MUSIC ===== -->
+<section class="section music" id="music">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:50px;">
+      <span class="section-label scroll-from-left torn-edge">Listen & Watch</span>
+      <h2 class="section-title scroll-from-right torn-edge">The <span class="highlight">Vibes</span></h2>
+    </div>
+    <div class="music-grid">
+      <div class="scroll-fade">
+        <div class="video-container" id="musicVideoContainer">
+          <div id="musicVideoOverlay" style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:rgba(10,10,10,0.55);cursor:pointer;z-index:2;flex-direction:column;gap:12px;">
+            <div style="display:flex;align-items:center;gap:8px;color:#FFD700;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;flex-shrink:0;"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span class="torn-edge" style="font-family:'Anton',sans-serif;font-size:1.2rem;letter-spacing:3px;text-transform:uppercase;color:#fff;">Play Video</span>
+            </div>
+          </div>
+          <img src="https://img.youtube.com/vi/lfR4cWUjt-M/hqdefault.jpg" alt="EF Moon - I knoww" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;pointer-events:none;" id="musicVidThumb" fetchpriority="high">
+          <iframe id="musicYtIframe" src="about:blank" title="EF Moon YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;pointer-events:none;transition:opacity 0.5s;"></iframe>
+        </div>
+      </div>
+      <div class="scroll-from-right">
+        <div style="margin-bottom:20px;">
+          <h3 style="font-size:1rem; margin-bottom:10px; color:#FFD700; font-family:'Anton',sans-serif; letter-spacing:3px;">Latest Release</h3>
+          <div class="spotify-embed">
+            <iframe src="https://open.spotify.com/embed/artist/0fFQ89LOIU2Bc8bRacEyv9?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div style="margin-top:20px;">
+          <h3 style="font-size:1rem; margin-bottom:10px; color:#FFD700; font-family:'Anton',sans-serif; letter-spacing:3px;">Stream Everywhere</h3>
+          <div class="stream-grid">
+            <a href="https://open.spotify.com/artist/0fFQ89LOIU2Bc8bRacEyv9" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg> Spotify</a>
+            <a href="https://music.apple.com/ng/artist/ef-moon/1717113178" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.67-.81 1.1-1.9 1-3-1.06.04-2.31.66-3.08 1.52-.69.77-1.1 1.86-.97 2.95 1.06.07 2.19-.58 3.05-1.47z"/></svg> Apple Music</a>
+            <a href="https://audiomack.com/ef_moon" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12" fill="currentColor"/></svg> Audiomack</a>
+            <a href="https://www.deezer.com/en/artist/243717582" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="4" height="2"  fill="currentColor"/><rect x="11" y="4" width="4" height="2"  fill="currentColor"/><rect x="19" y="4" width="2" height="2"  fill="currentColor"/><rect x="3" y="10" width="3" height="2"  fill="currentColor"/><rect x="14" y="10" width="7" height="2"  fill="currentColor"/><rect x="3" y="16" width="5" height="2"  fill="currentColor"/><rect x="11" y="16" width="3" height="2"  fill="currentColor"/><rect x="17" y="16" width="4" height="2"  fill="currentColor"/></svg> Deezer</a>
+            <a href="https://www.boomplay.com/artists/80358106" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,8 10,16 17,12" fill="currentColor"/></svg> Boomplay</a>
+            <a href="https://music.youtube.com/channel/UC4EZ9rf4WKv6ZwiZCjRDtsg" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="10,7.5 10,16.5 17,12" fill="currentColor"/></svg> YouTube Music</a>
+            <a href="https://soundcloud.com/elijah-friday-339590423" target="_blank" class="stream-badge"><svg viewBox="0 0 24 24"><path d="M1 14v3h2v-3H1zm3 0v4h2v-4H4zm3-2v6h2v-6H7zm3-3v9h2V9h-2zm3 1v8h2v-8h-2zm3-2v10h2V8h-2zm3-1v11h2V7h-2zm3-2v13h2V5h-2z"/></svg> SoundCloud</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-curve" style="transform: rotate(180deg);">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== MERCH ===== -->
+<section class="section merch" id="merch">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:50px;">
+      <span class="section-label scroll-from-left torn-edge">Shop</span>
+      <h2 class="section-title scroll-from-right torn-edge">Official <span class="highlight">Merch</span></h2>
+    </div>
+    <div class="scroll-fade" id="merchContainer" style="text-align:center;min-height:200px;">
+      <p style="color:rgba(255,255,255,0.4);">Loading merch...</p>
+    </div>
+  </div>
+</section>
+
+<div class="order-form-wrap" id="orderFormWrap">
+  <div class="order-form-inner">
+    <h3>Complete Your Order</h3>
+    <div class="order-items" id="orderItemsList"></div>
+    <div class="order-total" id="orderTotal">Total: ₦0</div>
+    <form id="orderForm" class="fan-form" style="margin-top:16px;">
+      <div class="form-row">
+        <input type="text" id="orderName" placeholder="Your Full Name" required>
+        <input type="email" id="orderEmail" placeholder="Your Email" required>
+      </div>
+      <div class="form-row">
+        <input type="tel" id="orderPhone" placeholder="Phone Number">
+        <input type="text" id="orderAddress" placeholder="Delivery Address">
+      </div>
+      <textarea id="orderNotes" placeholder="Additional notes..."></textarea>
+      <button type="submit" class="btn-primary" style="width:100%;text-align:center;justify-content:center;">Place Order</button>
+      <button type="button" class="btn-primary" style="width:100%;text-align:center;justify-content:center;background:transparent;border:1px solid rgba(255,255,255,0.2);margin-top:8px;" onclick="closeOrderForm()">Cancel</button>
+    </form>
+    <div id="orderSuccess" style="display:none;text-align:center;padding:20px;">
+      <span style="font-family:'Anton',sans-serif;font-size:2rem;color:#22c55e;">✓</span>
+      <p style="color:rgba(255,255,255,0.7);margin-top:10px;">Order placed! We'll reach out to you soon.</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider-curve">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== TOUR ===== -->
+<section class="section tour" id="tour">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:50px;">
+      <span class="section-label scroll-from-left torn-edge">On The Road</span>
+      <h2 class="section-title scroll-from-right torn-edge">World <span class="highlight">Tour</span> 2026</h2>
+    </div>
+    <div class="tour-tabs scroll-fade">
+      <button press class="tour-tab active" data-tab="world">World</button>
+      <button press class="tour-tab" data-tab="local">Nigeria</button>
+    </div>
+    <div class="tour-list scroll-fade" id="tourList"></div>
+    <div class="scroll-fade" style="text-align:center; margin-top:32px;">
+      <a href="#" class="btn-primary" press>Get Tickets</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider-curve" style="transform: rotate(180deg);">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<div class="divider-curve" style="transform: rotate(180deg);">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== GUIDANCE ===== -->
+<section class="section guidance" id="guidance">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:50px;">
+      <span class="section-label scroll-from-left torn-edge">Guidance</span>
+      <h2 class="section-title scroll-from-right torn-edge">Welcome <span class="highlight">Moonites</span></h2>
+    </div>
+    <div class="guidance-text scroll-fade" id="guidanceText">
+      Loading guidance...
+    </div>
+  </div>
+</section>
+
+<div class="divider-curve">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== CONNECT / CONTACT ===== -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:50px;">
+      <span class="section-label scroll-from-left torn-edge">Connect</span>
+      <h2 class="section-title scroll-from-right torn-edge">Get In <span class="highlight">Touch</span></h2>
+      <p class="scroll-fade" style="color:rgba(255,255,255,0.5);margin-top:10px;font-size:0.9rem;">Send me a message — I'd love to hear from you, Moonite.</p>
+    </div>
+    <form class="fan-form scroll-fade" id="contactForm">
+      <div class="form-row">
+        <input type="text" id="contactName" placeholder="Your Name" required>
+        <input type="email" id="contactEmail" placeholder="Your Email" required>
+      </div>
+      <textarea id="contactMessage" placeholder="Your Message..." required></textarea>
+      <button type="submit" class="btn-primary" style="width:100%;text-align:center;justify-content:center;">Send Message</button>
+    </form>
+    <div id="contactSuccess" style="display:none;text-align:center;margin-top:20px;">
+      <span style="font-family:'Anton',sans-serif;font-size:1.5rem;color:#22c55e;">✓ Message sent!</span>
+      <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;margin-top:6px;">Thank you for reaching out. I'll get back to you soon.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider-curve" style="transform: rotate(180deg);">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== FAN WALL ===== -->
+<section class="section fan-wall-section" id="fanwall">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:50px;">
+      <span class="section-label scroll-from-left torn-edge">Fan Wall</span>
+      <h2 class="section-title scroll-from-right torn-edge">Moonite <span class="highlight">Shoutouts</span></h2>
+      <p class="scroll-fade" style="color:rgba(255,255,255,0.5);margin-top:10px;font-size:0.9rem;">Leave a message and appear on the wall!</p>
+    </div>
+    <div class="fan-wall scroll-fade" id="fanWallContainer">
+      <form id="wallForm" style="margin-bottom:30px;padding:20px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:8px;">
+        <div class="form-row" style="margin-bottom:10px;">
+          <input type="text" id="wallName" placeholder="Your Name / @handle" required style="width:100%;padding:12px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#fff;font-family:'Lato',sans-serif;outline:none;border-radius:6px;">
+          <button type="submit" class="btn-primary" style="white-space:nowrap;" press>Post</button>
+        </div>
+        <textarea id="wallMessage" placeholder="Say something to EF Moon and the Moonite community..." required style="width:100%;padding:12px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#fff;font-family:'Lato',sans-serif;outline:none;border-radius:6px;min-height:60px;resize:vertical;"></textarea>
+      </form>
+      <div id="wallPosts">
+        <p style="color:rgba(255,255,255,0.3);text-align:center;">Loading shoutouts...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-curve">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,120 900,120 1200,0 L1200,0 L0,0 Z" fill="#0a0a0a"/>
+  </svg>
+</div>
+
+<!-- ===== SUPERFANS CHALLENGE ===== -->
+<section class="section challenge" id="challenge">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:50px;">
+      <span class="section-label scroll-from-left torn-edge">Superfans</span>
+      <h2 class="section-title scroll-from-right torn-edge">Moonite <span class="highlight">Challenge</span></h2>
+      <p class="scroll-fade" style="color:rgba(255,255,255,0.5);margin-top:10px;font-size:0.9rem;">Test your EF Moon knowledge and claim your spot on the leaderboard!</p>
+    </div>
+    <div class="scroll-fade" id="challengeContainer">
+      <div style="text-align:center;" id="challengeStart">
+        <button class="btn-primary" id="startChallengeBtn" press>Start Challenge</button>
+      </div>
+      <div id="challengeQuiz" style="display:none;" class="challenge-quiz"></div>
+      <div id="challengeResult" style="display:none;" class="result-overlay"></div>
+      <div id="challengeLeaderboard" style="margin-top:30px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="footer">
+  <div class="footer-grid">
+    <div class="footer-brand scroll-fade">
+      <img src="footer%20logo.png" alt="EF Moon" class="torn-edge" loading="lazy">
+      <p>EF Moon is a Nigerian Afro-beat artist redefining the sound of a generation. Welcome to the Moonite Era.</p>
+      <div class="social-links" style="margin-top:14px;">
+        <a class="torn-edge" href="https://www.instagram.com/ef_moon2000/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20"   fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
+        <a class="torn-edge" href="https://www.youtube.com/@ef_moon" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16"  fill="none" stroke="currentColor" stroke-width="1.5"/><polygon points="9.5,7.5 9.5,16.5 17.5,12" fill="currentColor"/></svg></a>
+        <a class="torn-edge" href="https://www.facebook.com/61571833882841" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/></svg></a>
+        <a class="torn-edge" href="https://x.com/EF555" target="_blank" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg></a>
+        <a class="torn-edge" href="http://tiktok.com/@elijahfriday" target="_blank" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill="currentColor"/></svg></a>
+        <a class="torn-edge" href="https://open.spotify.com/artist/0fFQ89LOIU2Bc8bRacEyv9" target="_blank" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+        <a class="torn-edge" href="https://music.apple.com/ng/artist/ef-moon/1717113178" target="_blank" aria-label="Apple Music"><svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.67-.81 1.1-1.9 1-3-1.06.04-2.31.66-3.08 1.52-.69.77-1.1 1.86-.97 2.95 1.06.07 2.19-.58 3.05-1.47z"/></svg></a>
+      </div>
+    </div>
+    <div class="scroll-fade">
+      <h4 class="torn-edge">Music</h4>
+      <ul>
+        <li><a href="#">MOON 1 Album</a></li>
+        <li><a href="#">I knoww (Single)</a></li>
+        <li><a href="#">Discography</a></li>
+        <li><a href="#">Music Videos</a></li>
+      </ul>
+    </div>
+    <div class="scroll-fade">
+      <h4 class="torn-edge">Connect</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/ef_moon2000/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@ef_moon" target="_blank">YouTube</a></li>
+        <li><a href="https://www.facebook.com/61571833882841" target="_blank">Facebook</a></li>
+        <li><a href="https://x.com/EF555" target="_blank">X (Twitter)</a></li>
+        <li><a href="http://tiktok.com/@elijahfriday" target="_blank">TikTok</a></li>
+      </ul>
+    </div>
+    <div class="scroll-fade">
+      <h4 class="torn-edge">Stay Connected</h4>
+      <p style="font-size:0.7rem;color:rgba(255,255,255,0.4);margin-bottom:8px;">Join the Moonite mailing list</p>
+      <form class="footer-input" id="mailForm">
+        <input type="email" placeholder="Your email" required>
+        <button press type="submit">Join</button>
+      </form>
+      <div style="margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.04);">
+        <p style="font-size:0.7rem;color:rgba(255,255,255,0.4);margin-bottom:8px;">Get tour alerts via SMS</p>
+        <form class="footer-input" id="smsForm">
+          <input type="tel" placeholder="Mobile number" required>
+          <button press type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 EF Moon. All rights reserved. Moonite Records. <a href="privacy-policy.html" class="footer-privacy">Privacy Policy</a></p>
+    <p style="letter-spacing:2px; font-family:'Bebas Neue',sans-serif; display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap;">DESIGNED FOR THE MOONITES BY ZANEDEV&lt;/&gt; <img src="WATER%20MARK.png" alt="" style="height:20px; width:auto;" loading="lazy" fetchpriority="low"></p>
+  </div>
+</footer>
+
+<!-- ===== GSAP ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+<script>
+(function(){
+  'use strict';
+
+  // ===== LAZY VIDEOS: IntersectionObserver =====
+  function initLazyVideo(video) {
+    const src = video.dataset.src;
+    if (!src) return;
+    const source = document.createElement('source');
+    source.src = src;
+    source.type = 'video/mp4';
+    video.appendChild(source);
+    video.load();
+    video.addEventListener('canplay', () => { video.play().catch(() => {}); }, { once: true });
+  }
+  const lazyVideoObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        initLazyVideo(video);
+        lazyVideoObs.unobserve(video);
+      }
+    });
+  }, { rootMargin: '200px' });
+  document.querySelectorAll('.lazy-video').forEach(v => lazyVideoObs.observe(v));
+
+  // ===== HERO VIDEO (load after splash dismiss) =====
+  const heroVideo = document.getElementById('heroVideo');
+  let heroVideoReady = false;
+  function loadHeroVideo() {
+    if (heroVideoReady) return;
+    heroVideoReady = true;
+    const src = heroVideo.dataset.src;
+    if (!src) return;
+    const source = document.createElement('source');
+    source.src = src;
+    source.type = 'video/mp4';
+    heroVideo.appendChild(source);
+    heroVideo.load();
+    heroVideo.play().catch(() => {});
+  }
+
+  // ===== INSTANT TOUCH PRESS FEEDBACK =====
+  document.addEventListener('touchstart', (e) => {
+    const t = e.target.closest('[press], button, .btn, .btn-hero, .splashscreen-btn, .stream-badge, .tour-tab, .hamburger');
+    if (t) t.classList.add('pressed');
+  }, { passive: true });
+  document.addEventListener('touchend', (e) => {
+    const t = e.target.closest('[press], button, .btn, .btn-hero, .splashscreen-btn, .stream-badge, .tour-tab, .hamburger');
+    if (t) setTimeout(() => t.classList.remove('pressed'), 150);
+  }, { passive: true });
+  document.addEventListener('touchcancel', (e) => {
+    const t = e.target.closest('[press], button, .btn, .btn-hero, .splashscreen-btn, .stream-badge, .tour-tab, .hamburger');
+    if (t) t.classList.remove('pressed');
+  }, { passive: true });
+
+  // ===== UNLOCK AUDIO ON iOS =====
+  function unlockAudio() {
+    const silent = new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjQ1LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjQxAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYnd0MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//sQxAADwAABpAAAAAMAAAADM0bVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//uQxAAAAAAs0AIQAAAANAAABEA');
+    silent.play().then(() => silent.pause()).catch(() => {});
+    document.removeEventListener('touchstart', unlockAudio);
+    document.removeEventListener('click', unlockAudio);
+  }
+  document.addEventListener('touchstart', unlockAudio, { once: true, passive: true });
+  document.addEventListener('click', unlockAudio, { once: true });
+
+  // ===== YOUTUBE VIDEO AD (thumbnail-based) =====
+  const ytOverlay = document.getElementById('videoAdOverlay');
+  const ytIframe = document.getElementById('ytVideoAd');
+  const ytContainer = document.getElementById('ytVideoContainer');
+  if (ytOverlay && ytIframe) {
+    function activateYT() {
+      ytOverlay.style.display = 'none';
+      ytIframe.src = 'https://www.youtube.com/embed/lfR4cWUjt-M?autoplay=1&mute=1&rel=0&loop=1&playlist=lfR4cWUjt-M';
+      if (ytContainer) ytContainer.style.display = 'none';
+      ytIframe.style.opacity = '1';
+      ytIframe.style.pointerEvents = 'auto';
+    }
+    ytOverlay.addEventListener('click', (e) => { e.stopPropagation(); activateYT(); });
+    ytOverlay.addEventListener('touchstart', (e) => { e.stopPropagation(); activateYT(); }, { passive: true });
+  }
+
+  // ===== CLICK SOUND POOL (responsive rapid clicks) =====
+  const clickPool = [0,1,2].map(() => { const a = new Audio('CLICK%20SOUND.mp3'); a.volume = 0.3; a.preload = 'auto'; return a; });
+  let clickIdx = 0;
+  function playClick() {
+    const s = clickPool[clickIdx];
+    clickIdx = (clickIdx + 1) % clickPool.length;
+    s.currentTime = 0;
+    s.play().catch(() => {});
+  }
+  document.addEventListener('click', (e) => {
+    if (!splashDismissed) return;
+    if (e.target.closest('#splashscreen')) return;
+    playClick();
+  });
+
+  // ===== SPLASHSCREEN =====
+  const splashScreen = document.getElementById('splashscreen');
+  const splashBtn = document.getElementById('splashBtn');
+  let splashDismissed = false;
+
+  let currentTrackId = null;
+
+  function stopTrack(trackEl) {
+    if (!trackEl) return;
+    const id = trackEl.dataset.track;
+    const iframe = document.getElementById(id);
+    const playBtn = trackEl.querySelector('.play-btn');
+    if (iframe) iframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":[]}', '*');
+    trackEl.classList.remove('playing');
+    if (playBtn) playBtn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="6,4 6,20 20,12"/></svg>';
+    trackState[id] = false;
+    if (currentTrackId === id) currentTrackId = null;
+  }
+
+  function playTrack(trackEl) {
+    const id = trackEl.dataset.track;
+    const iframe = document.getElementById(id);
+    const videoId = iframe ? iframe.dataset.video : '';
+    const playBtn = trackEl.querySelector('.play-btn');
+    if (!iframe || !videoId) return;
+    trackState[id] = true;
+    trackEl.classList.add('playing');
+    if (playBtn) playBtn.innerHTML = '<svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+    iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":[]}', '*');
+    iframe.contentWindow.postMessage('{"event":"command","func":"unMute","args":[]}', '*');
+    iframe.contentWindow.postMessage('{"event":"command","func":"setVolume","args":[100]}', '*');
+    currentTrackId = id;
+  }
+
+  function dismissSplash() {
+    if (splashDismissed) return;
+    splashDismissed = true;
+    playClick();
+    loadHeroVideo();
+    splashScreen.classList.add('hidden');
+    setTimeout(() => {
+      splashScreen.style.display = 'none';
+    }, 600);
+    // Auto-play first track after splash dismiss
+    setTimeout(() => {
+      const firstTrack = document.querySelector('[data-track="ytIKnoww"]') || document.querySelector('.album-track');
+      if (firstTrack && !currentTrackId) playTrack(firstTrack);
+    }, 800);
+  }
+
+  splashBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dismissSplash();
+  });
+  splashBtn.addEventListener('touchstart', (e) => {
+    e.stopPropagation();
+    dismissSplash();
+  }, { passive: true });
+
+  // ===== FOOTER FORMS =====
+  document.getElementById('mailForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thanks for signing up, Moonite!');
+  });
+  document.getElementById('smsForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('SMS alerts coming soon!');
+  });
+
+  // ===== MOUSE TRAILER =====
+  const trailer = document.getElementById('trailer');
+  if (window.matchMedia('(hover: hover)').matches) {
+    let trailX = -100, trailY = -100, rafId;
+    document.addEventListener('mousemove', (e) => {
+      trailX = e.clientX - 5; trailY = e.clientY - 5;
+      if (!rafId) rafId = requestAnimationFrame(() => {
+        trailer.style.opacity = '1';
+        trailer.style.transform = `translate(${trailX}px,${trailY}px)`;
+        rafId = null;
+      });
+    });
+    document.addEventListener('mouseleave', () => { trailer.style.opacity = '0'; });
+  } else {
+    trailer.style.display = 'none';
+  }
+
+  // ===== PARTICLES (optimized - single animation) =====
+  const particlesContainer = document.getElementById('particles');
+  const isLowPerf = window.matchMedia('(max-width: 768px)').matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const particleCount = isLowPerf ? 3 : 8;
+  for (let i = 0; i < particleCount; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = 1.5 + Math.random() * 2;
+    const duration = 20 + Math.random() * 25;
+    const delay = Math.random() * 20;
+    const drift = (30 - Math.random() * 60).toFixed(0);
+    const opacity = (0.05 + Math.random() * 0.15).toFixed(3);
+    p.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;width:${size}px;height:${size}px;opacity:0;animation:floatP ${duration}s linear ${delay}s infinite;--drift:${drift}px;--p-opacity:${opacity}`;
+    if (!isLowPerf) p.style.willChange = 'transform';
+    particlesContainer.appendChild(p);
+  }
+
+  // ===== MUSIC SECTION VIDEO =====
+  const musicVidOverlay = document.getElementById('musicVideoOverlay');
+  const musicVidIframe = document.getElementById('musicYtIframe');
+  const musicVidContainer = document.getElementById('musicVideoContainer');
+  const musicVidThumb = document.getElementById('musicVidThumb');
+  if (musicVidOverlay && musicVidIframe) {
+    function activateMusicVideo() {
+      musicVidOverlay.style.display = 'none';
+      if (musicVidThumb) musicVidThumb.style.display = 'none';
+      musicVidIframe.src = 'https://www.youtube.com/embed/lfR4cWUjt-M?autoplay=1&rel=0&loop=1&playlist=lfR4cWUjt-M';
+      musicVidIframe.style.opacity = '1';
+      musicVidIframe.style.pointerEvents = 'auto';
+    }
+    musicVidOverlay.addEventListener('click', activateMusicVideo);
+    musicVidOverlay.addEventListener('touchstart', activateMusicVideo, { passive: true });
+  }
+
+  // ===== TRACK PLAYER (sequential playlist) =====
+  const trackList = document.getElementById('albumTracklist');
+  const trackState = {};
+  const trackOrder = ['ytLifeIsSlo','ytIKnoww','ytExpress','ytFearful','ytRrhoids','ytRelax','ytNoTrustMe','ytAnimal','ytY'];
+  function handleTrackClick(e) {
+    const track = e.target.closest('.album-track');
+    if (!track) return;
+    const id = track.dataset.track;
+    const iframe = document.getElementById(id);
+    const videoId = iframe ? iframe.dataset.video : '';
+    if (!iframe || !videoId) return;
+    if (trackState[id]) {
+      stopTrack(track);
+    } else {
+      if (currentTrackId) {
+        const prevTrack = document.querySelector(`[data-track="${currentTrackId}"]`);
+        if (prevTrack) stopTrack(prevTrack);
+      }
+      playTrack(track);
+    }
+  }
+  if (trackList) {
+    trackList.addEventListener('click', handleTrackClick);
+    trackList.addEventListener('touchstart', (e) => {
+      handleTrackClick(e);
+      e.preventDefault();
+    }, { passive: false });
+  }
+  // First click anywhere in the album section starts the first track
+  const albumSection = document.querySelector('#album');
+  if (albumSection) {
+    const albumActivate = (e) => {
+      if (currentTrackId) return;
+      if (e.target.closest('.album-track')) return;
+      const firstTrack = document.querySelector('[data-track="ytIKnoww"]') || document.querySelector('.album-track');
+      if (firstTrack) playTrack(firstTrack);
+      albumSection.removeEventListener('click', albumActivate);
+    };
+    albumSection.addEventListener('click', albumActivate);
+  }
+
+  // ===== AUTO-ADVANCE: postMessage listener + polling fallback =====
+  window.addEventListener('message', (e) => {
+    try {
+      const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+      if (data && data.event === 'onStateChange' && data.info == 0 && currentTrackId) {
+        const curIdx = trackOrder.indexOf(currentTrackId);
+        if (curIdx === -1) return;
+        const nextId = trackOrder[curIdx + 1] || trackOrder[0];
+        const nextTrack = document.querySelector(`[data-track="${nextId}"]`);
+        if (nextTrack) {
+          const prevTrack = document.querySelector(`[data-track="${currentTrackId}"]`);
+          if (prevTrack) stopTrack(prevTrack);
+          playTrack(nextTrack);
+        }
+      }
+    } catch (_) {}
+  });
+  // Polling fallback: check every 2s if the video likely ended
+  setInterval(() => {
+    if (!currentTrackId) return;
+    const iframe = document.getElementById(currentTrackId);
+    if (iframe) iframe.contentWindow.postMessage('{"event":"command","func":"getCurrentTime","args":[]}', '*');
+  }, 2000);
+  // Track nonce to detect time changes
+  let lastTimes = {};
+  window.addEventListener('message', (e) => {
+    try {
+      const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+      if (data && data.event === 'onCurrentTime' && currentTrackId) {
+        const t = data.info;
+        const prev = lastTimes[currentTrackId];
+        if (prev !== undefined && t === prev && t > 0 && trackState[currentTrackId]) {
+          lastTimes[currentTrackId] = -1;
+          const curIdx = trackOrder.indexOf(currentTrackId);
+          if (curIdx === -1) return;
+          const nextId = trackOrder[curIdx + 1] || trackOrder[0];
+          const nextTrack = document.querySelector(`[data-track="${nextId}"]`);
+          if (nextTrack) {
+            const prevTrack = document.querySelector(`[data-track="${currentTrackId}"]`);
+            if (prevTrack) stopTrack(prevTrack);
+            playTrack(nextTrack);
+          }
+        } else if (t > 0) {
+          lastTimes[currentTrackId] = t;
+        }
+      }
+    } catch (_) {}
+  });
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  function openNav() {
+    navLinks.classList.remove('closing');
+    navLinks.classList.add('open');
+    hamburger.classList.add('active');
+  }
+  function closeNav() {
+    navLinks.classList.add('closing');
+    hamburger.classList.remove('active');
+    setTimeout(() => {
+      navLinks.classList.remove('open', 'closing');
+    }, 500);
+  }
+  hamburger.addEventListener('click', () => {
+    if (navLinks.classList.contains('open')) {
+      closeNav();
+    } else {
+      openNav();
+    }
+  });
+
+  // ===== HOME BUTTON =====
+  const homeBtn = document.getElementById('homeBtn');
+  homeBtn.addEventListener('mousedown', () => homeBtn.classList.add('pressed'), { passive: true });
+  homeBtn.addEventListener('mouseup', () => homeBtn.classList.remove('pressed'), { passive: true });
+  homeBtn.addEventListener('mouseleave', () => homeBtn.classList.remove('pressed'), { passive: true });
+  homeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeNav);
+  });
+
+  // ===== NAVBAR SCROLL =====
+  const navbar = document.getElementById('navbar');
+  const hero = document.getElementById('hero');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY > 60;
+    navbar.classList.toggle('scrolled', scrolled);
+    const pastHero = hero ? window.scrollY >= hero.offsetHeight - 100 : scrolled;
+    navLinks.classList.toggle('hidden-scroll', pastHero && !navLinks.classList.contains('open'));
+  }, { passive: true });
+
+  // ===== TOUR DATA =====
+  const tourData = {
+    world: [
+      { date: '15 AUG', city: 'London, UK', venue: 'O2 Academy Brixton', status: 'avail' },
+      { date: '22 AUG', city: 'New York, USA', venue: 'Irving Plaza', status: 'avail' },
+      { date: '05 SEP', city: 'Toronto, CA', venue: 'The Phoenix', status: 'avail' },
+      { date: '19 SEP', city: 'Paris, FR', venue: 'Le Trianon', status: 'avail' },
+      { date: '03 OCT', city: 'Amsterdam, NL', venue: 'Melkweg', status: 'sold' },
+      { date: '17 OCT', city: 'Berlin, DE', venue: 'Lido', status: 'avail' },
+      { date: '31 OCT', city: 'Dubai, UAE', venue: 'The Fridge', status: 'avail' },
+      { date: '14 NOV', city: 'Johannesburg, SA', venue: 'The Zone', status: 'sold' },
+    ],
+    local: [
+      { date: '20 JUN', city: 'Lagos', venue: 'Eko Convention Centre', status: 'avail' },
+      { date: '27 JUN', city: 'Abuja', venue: 'Transcorp Hilton', status: 'avail' },
+      { date: '04 JUL', city: 'Port Harcourt', venue: 'Hotel Presidential', status: 'sold' },
+      { date: '11 JUL', city: 'Ibadan', venue: 'Jogor Centre', status: 'avail' },
+      { date: '18 JUL', city: 'Benin City', venue: 'Festival Grounds', status: 'avail' },
+      { date: '25 JUL', city: 'Enugu', venue: 'Shoprite Enugu', status: 'avail' },
+      { date: '01 AUG', city: 'Kano', venue: 'Grand Central', status: 'sold' },
+      { date: '08 AUG', city: 'Calabar', venue: 'Cultural Centre', status: 'avail' },
+    ]
+  };
+  const tourList = document.getElementById('tourList');
+  function renderTour(tab) {
+    tourList.innerHTML = tourData[tab].map(item => `
+      <div class="tour-item">
+        <span class="tour-date">${item.date}</span>
+        <span class="tour-city">${item.city}</span>
+        <span class="tour-venue">${item.venue}</span>
+        <span class="tour-status ${item.status}">${item.status === 'sold' ? 'Sold Out' : 'Available'}</span>
+      </div>
+    `).join('');
+  }
+  renderTour('world');
+  document.querySelectorAll('.tour-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.tour-tab').forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      renderTour(this.dataset.tab);
+    });
+  });
+
+  // ===== GUIDANCE =====
+  fetch('/api/content/settings').then(r => r.json()).then(s => {
+    const el = document.getElementById('guidanceText');
+    if (el) el.textContent = s.guidance || 'Welcome to EF MOON. Here you can explore the music, connect with the Moonite community, and dive into the universe. Stay tuned for updates, exclusive content, and more.';
+  }).catch(() => {});
+
+  // ===== MERCH =====
+  let merchCart = [];
+  let merchData = [];
+  function renderMerch() {
+    fetch('/api/content/merch').then(r => r.json()).then(items => {
+      merchData = items;
+      const container = document.getElementById('merchContainer');
+      if (!container) return;
+      if (!items.length) {
+        container.innerHTML = '<div class="scroll-zoom"><span style="font-family:\'Anton\',sans-serif;font-size:3.5rem;letter-spacing:12px;color:#FFD700;filter:url(#torn);display:inline-block;">COMING SOON</span><p style="color:rgba(255,255,255,0.4);font-size:1rem;margin-top:16px;letter-spacing:3px;font-family:\'Bebas Neue\',sans-serif;">Official merch dropping soon — stay tuned, Moonites.</p></div>';
+        return;
+      }
+      container.innerHTML = '<div class="merch-grid-display">' + items.map(m => `
+        <div class="merch-card scroll-fade">
+          ${m.image ? `<img src="${m.image}" alt="${m.name}" loading="lazy">` : '<div style="height:240px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.02);color:rgba(255,255,255,0.2);font-size:0.7rem;">NO IMAGE</div>'}
+          <div class="merch-card-body">
+            <h3>${m.name}</h3>
+            <div class="price">₦${m.price}</div>
+            ${m.description ? `<p>${m.description}</p>` : ''}
+            <button class="btn-merch" onclick="addToMerchCart('${m.id}')" id="merchBtn_${m.id}">Add to Cart</button>
+          </div>
+        </div>`).join('') + '</div>';
+    }).catch(() => {});
+  }
+  window.addToMerchCart = function(id) {
+    const item = merchData.find(m => m.id === id);
+    if (!item) return;
+    const existing = merchCart.find(c => c.id === id);
+    if (existing) { existing.qty = (existing.qty || 1) + 1; }
+    else { merchCart.push({ id: item.id, name: item.name, price: item.price, qty: 1 }); }
+    const btn = document.getElementById('merchBtn_' + id);
+    if (btn) { btn.textContent = '✓ Added (' + (existing ? existing.qty : 1) + ')'; btn.classList.add('added'); }
+  };
+  window.openOrderForm = function() {
+    if (!merchCart.length) { alert('Your cart is empty!'); return; }
+    const list = document.getElementById('orderItemsList');
+    let html = '', total = 0;
+    merchCart.forEach(c => {
+      const p = parseFloat(c.price) || 0;
+      total += p * c.qty;
+      html += '<div class="order-item"><span>' + c.name + ' x' + c.qty + '</span><span>₦' + (p * c.qty).toLocaleString() + '</span></div>';
+    });
+    list.innerHTML = html;
+    document.getElementById('orderTotal').textContent = 'Total: ₦' + total.toLocaleString();
+    document.getElementById('orderFormWrap').classList.add('open');
+    document.getElementById('orderForm').style.display = '';
+    document.getElementById('orderSuccess').style.display = 'none';
+  };
+  window.closeOrderForm = function() {
+    document.getElementById('orderFormWrap').classList.remove('open');
+  };
+  document.getElementById('orderForm')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = {
+      items: merchCart,
+      name: document.getElementById('orderName').value,
+      email: document.getElementById('orderEmail').value,
+      phone: document.getElementById('orderPhone').value,
+      address: document.getElementById('orderAddress').value,
+      notes: document.getElementById('orderNotes').value
+    };
+    try {
+      const res = await fetch('/api/orders', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error);
+      document.getElementById('orderForm').style.display = 'none';
+      document.getElementById('orderSuccess').style.display = 'block';
+      merchCart = [];
+      renderMerch();
+    } catch (err) { alert('Failed to place order: ' + err.message); }
+  });
+  renderMerch();
+
+  // ===== CONTACT =====
+  document.getElementById('contactForm')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = {
+      name: document.getElementById('contactName').value,
+      email: document.getElementById('contactEmail').value,
+      message: document.getElementById('contactMessage').value
+    };
+    try {
+      const res = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error);
+      document.getElementById('contactForm').reset();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('contactSuccess').style.display = 'block';
+    } catch (err) { alert('Failed to send: ' + err.message); }
+  });
+
+  // ===== FAN WALL =====
+  function loadWall() {
+    fetch('/api/interact/approved').then(r => r.json()).then(posts => {
+      const container = document.getElementById('wallPosts');
+      if (!container) return;
+      if (!posts.length) { container.innerHTML = '<p style="color:rgba(255,255,255,0.3);text-align:center;">No shoutouts yet. Be the first Moonite to post!</p>'; return; }
+      container.innerHTML = posts.map(p => `
+        <div class="wall-post scroll-fade">
+          <div class="post-name">${p.name}</div>
+          <div class="post-date">${new Date(p.date).toLocaleDateString()}</div>
+          <div class="post-msg">${p.message}</div>
+        </div>
+      `).join('');
+    }).catch(() => {});
+  }
+  document.getElementById('wallForm')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = {
+      name: document.getElementById('wallName').value,
+      message: document.getElementById('wallMessage').value
+    };
+    try {
+      const res = await fetch('/api/interact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error);
+      document.getElementById('wallForm').reset();
+      alert(result.message || 'Your message has been submitted for review!');
+    } catch (err) { alert('Failed to post: ' + err.message); }
+  });
+  loadWall();
+
+  // ===== SUPERFANS CHALLENGE =====
+  let challengeQuestions = [];
+  let challengeAnswers = {};
+  document.getElementById('startChallengeBtn')?.addEventListener('click', async () => {
+    try {
+      const res = await fetch('/api/challenge/questions');
+      const qs = await res.json();
+      challengeQuestions = qs;
+      challengeAnswers = {};
+      if (!qs.length) { alert('No challenge questions available yet!'); return; }
+      document.getElementById('challengeStart').style.display = 'none';
+      const quizEl = document.getElementById('challengeQuiz');
+      quizEl.style.display = '';
+      let html = '<form id="quizForm">';
+      qs.forEach((q, i) => {
+        html += '<div class="quiz-question scroll-fade"><h4>' + (i+1) + '. ' + q.question + '</h4>';
+        (q.options || []).forEach((opt, oi) => {
+          html += '<label class="quiz-option" onclick="this.classList.toggle(\'selected\');var inp=this.querySelector(\'input\');inp.checked=!inp.checked;challengeAnswers[\'' + q.id + '\']=inp.checked?opt:null;"><input type="radio" name="q_' + q.id + '" value="' + opt + '"><span>' + opt + '</span></label>';
+        });
+        html += '</div>';
+      });
+      html += '<button type="submit" class="btn-primary" style="width:100%;text-align:center;justify-content:center;" press>Submit Answers</button></form>';
+      quizEl.innerHTML = html;
+      document.getElementById('quizForm')?.addEventListener('submit', submitChallenge);
+    } catch (err) { alert('Failed to load challenge: ' + err.message); }
+  });
+
+  async function submitChallenge(e) {
+    e.preventDefault();
+    const answers = Object.entries(challengeAnswers).map(([questionId, answer]) => ({ questionId, answer }));
+    const name = prompt('Enter your name for the leaderboard:') || 'Anonymous';
+    const email = prompt('Enter your email (optional):') || '';
+    try {
+      const res = await fetch('/api/challenge/submit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name, email, answers }) });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error);
+      document.getElementById('challengeQuiz').style.display = 'none';
+      const resultEl = document.getElementById('challengeResult');
+      resultEl.style.display = '';
+      const emoji = result.score >= 80 ? '🏆' : result.score >= 50 ? '⭐' : '🌙';
+      resultEl.innerHTML = '<div class="big-score">' + result.score + '%</div><div class="result-msg">You got <strong>' + result.correct + '/' + result.total + '</strong> correct! ' + emoji + '</div><button class="btn-primary" style="margin-top:20px;" onclick="location.reload()" press>Try Again</button>';
+      loadLeaderboard();
+    } catch (err) { alert('Failed to submit: ' + err.message); }
+  }
+
+  function loadLeaderboard() {
+    fetch('/api/challenge/leaderboard').then(r => r.json()).then(scores => {
+      const el = document.getElementById('challengeLeaderboard');
+      if (!el) return;
+      if (!scores.length) { el.innerHTML = ''; return; }
+      el.innerHTML = '<div style="text-align:center;margin-bottom:20px;"><h3 style="font-family:\'Anton\',sans-serif;font-size:1.3rem;letter-spacing:3px;color:#FFD700;">Leaderboard</h3></div><div class="leaderboard-list">' +
+        scores.map((s, i) => '<div class="lb-entry scroll-fade"><span class="lb-rank">#' + (i+1) + '</span><span class="lb-name">' + s.name + '</span><span class="lb-score">' + s.score + '%</span></div>').join('') +
+        '</div>';
+    }).catch(() => {});
+  }
+  setTimeout(loadLeaderboard, 1000);
+
+  // ===== COUNTDOWN =====
+  function updateCountdown() {
+    const target = new Date('2026-07-17T00:00:00').getTime();
+    const now = Date.now();
+    const diff = Math.max(0, target - now);
+    document.getElementById('cdDays').textContent = String(Math.floor(diff / (1000*60*60*24))).padStart(2,'0');
+    document.getElementById('cdHours').textContent = String(Math.floor((diff % (1000*60*60*24)) / (1000*60*60))).padStart(2,'0');
+    document.getElementById('cdMins').textContent = String(Math.floor((diff % (1000*60*60)) / (1000*60))).padStart(2,'0');
+    document.getElementById('cdSecs').textContent = String(Math.floor((diff % (1000*60)) / 1000)).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // ===== WAIT FOR GSAP =====
+  function waitForGSAP(cb) {
+    if (typeof gsap !== 'undefined') { cb(); return; }
+    const check = setInterval(() => {
+      if (typeof gsap !== 'undefined') { clearInterval(check); cb(); }
+    }, 50);
+  }
+
+  waitForGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const isMobile = window.innerWidth < 768;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const heroSocialCorner = document.getElementById('heroSocialCorner');
+
+    if (prefersReducedMotion) {
+      gsap.set('.scroll-from-left, .scroll-from-right, .scroll-fade, .scroll-zoom, section.section, footer.footer', { clearProps: 'all' });
+      gsap.set('.hero-social-corner a', { opacity: 1, y: 0 });
+      return;
+    }
+
+    // Hero social links staggered entrance
+    gsap.set('.hero-social-corner a', { opacity: 0, y: 20 });
+    gsap.to('.hero-social-corner a', { opacity: 1, y: 0, duration: 0.5, stagger: 0.05, ease: 'power2.out', delay: 0.3 });
+
+    // Hero parallax zoom + brightness on scroll
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: 'top top',
+      end: () => '+=' + window.innerHeight,
+      scrub: 1.5,
+      onUpdate: self => {
+        const p = self.progress;
+        gsap.to(heroVideo, { scale: 1 + p * 0.12, filter: `brightness(${1 - p * 0.25})`, ease: 'none' });
+      }
+    });
+
+    // Social corner: fade when scrolling past hero
+    ScrollTrigger.create({
+      trigger: '#hero',
+      start: 'top top',
+      end: 'bottom top',
+      toggleActions: 'play none play reverse',
+      onEnter: () => gsap.to(heroSocialCorner, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }),
+      onLeave: () => gsap.to(heroSocialCorner, { opacity: 0, y: 10, duration: 0.3, ease: 'power2.in' }),
+      onEnterBack: () => gsap.to(heroSocialCorner, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }),
+      onLeaveBack: () => gsap.to(heroSocialCorner, { opacity: 0, y: 10, duration: 0.3, ease: 'power2.in' })
+    });
+
+    // ===== SECTION REVEAL: fade + zoom sections on scroll =====
+    const revealConfig = isMobile
+      ? { y: 30, scale: 1, duration: 0.5 }
+      : { y: 60, scale: 0.95, duration: 0.8 };
+
+    gsap.utils.toArray('section.section, footer.footer').forEach(el => {
+      gsap.set(el, { opacity: 0, y: revealConfig.y, scale: revealConfig.scale });
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 85%',
+        once: true,
+        onEnter: () => {
+          gsap.to(el, { opacity: 1, y: 0, scale: 1, duration: revealConfig.duration, ease: 'power3.out' });
+        }
+      });
+    });
+
+    // ===== VERTICAL PARALLAX: background videos move slower =====
+    gsap.utils.toArray('section video, section .parallax-bg').forEach(el => {
+      const section = el.closest('section');
+      if (!section) return;
+      gsap.to(el, {
+        y: () => section.offsetHeight * 0.2,
+        ease: 'none',
+        scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: 0.5 }
+      });
+    });
+
+    // ===== SCROLL REVEAL: left/right/fade/zoom with parallax motion =====
+    const hParallaxDist = isMobile ? 40 : 120;
+    const hParallaxScrub = isMobile ? 0.2 : 0.6;
+
+    // scroll-from-left: slide in from left with parallax
+    gsap.utils.toArray('.scroll-from-left').forEach(el => {
+      gsap.set(el, { opacity: 0, x: -hParallaxDist });
+      gsap.to(el, {
+        opacity: 1, x: 0, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', end: 'top 35%', scrub: hParallaxScrub }
+      });
+    });
+
+    // scroll-from-right: slide in from right
+    gsap.utils.toArray('.scroll-from-right').forEach(el => {
+      gsap.set(el, { opacity: 0, x: hParallaxDist });
+      gsap.to(el, {
+        opacity: 1, x: 0, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', end: 'top 35%', scrub: hParallaxScrub }
+      });
+    });
+
+    // scroll-fade: fade + slide up
+    gsap.utils.toArray('.scroll-fade').forEach(el => {
+      gsap.set(el, { opacity: 0, y: isMobile ? 30 : 50 });
+      gsap.to(el, {
+        opacity: 1, y: 0, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', end: 'top 35%', scrub: hParallaxScrub }
+      });
+    });
+
+    // scroll-zoom: scale from small
+    gsap.utils.toArray('.scroll-zoom').forEach(el => {
+      gsap.set(el, { opacity: 0, scale: 0.7 });
+      gsap.to(el, {
+        opacity: 1, scale: 1, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', end: 'top 35%', scrub: hParallaxScrub }
+      });
+    });
+
+    // ===== CARD STAGGER: stagger children inside containers =====
+    gsap.utils.toArray('.album-tracklist, .stream-grid, .merch-grid, .tour-list').forEach(el => {
+      const items = el.children;
+      if (items.length < 2) return;
+      gsap.set(items, { opacity: 0, y: 20 });
+      gsap.to(items, {
+        opacity: 1, y: 0, duration: 0.5, stagger: 0.06, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', once: true }
+      });
+    });
+
+    // ===== TOUR TAB STAGGER =====
+    gsap.utils.toArray('.tour-tabs').forEach(el => {
+      gsap.set(el.children, { opacity: 0, y: 10 });
+      gsap.to(el.children, {
+        opacity: 1, y: 0, duration: 0.3, stagger: 0.1, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', once: true }
+      });
+    });
+
+    // ===== FOOTER COLUMNS STAGGER =====
+    gsap.utils.toArray('.footer-grid > *').forEach((el, i) => {
+      gsap.set(el, { opacity: 0, y: 40 });
+      gsap.to(el, {
+        opacity: 1, y: 0, duration: 0.6, delay: i * 0.1, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', once: true }
+      });
+    });
+
+    // ===== COUNTDOWN PULSE =====
+    gsap.utils.toArray('.countdown-box').forEach(el => {
+      gsap.fromTo(el, { scale: 1 }, {
+        scale: 1.05, duration: 0.4, ease: 'power1.inOut', yoyo: true, repeat: -1
+      });
+    });
+
+    // Navbar entrance
+    gsap.from('.nav-link', { opacity: 0, y: -20, stagger: 0.08, duration: 0.6, ease: 'power2.out', delay: 0.2 });
+    gsap.from('.nav-logo', { opacity: 0, scale: 0.8, duration: 0.8, ease: 'elastic.out(1, 0.5)', delay: 0.1 });
+
+    // Refresh after layout settles
+    setTimeout(() => ScrollTrigger.refresh(), 500);
+    window.addEventListener('load', () => ScrollTrigger.refresh());
+    window.addEventListener('resize', () => { ScrollTrigger.refresh(); });
+  });
+
+})();
+</script>
+</body>
+</html>
